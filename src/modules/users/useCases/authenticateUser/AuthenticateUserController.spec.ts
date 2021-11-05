@@ -1,6 +1,7 @@
 import request from "supertest";
 import { app } from "../../../../app";
-import { Connection, createConnection } from "typeorm";
+import { Connection } from "typeorm";
+import createConnection from "../../../../database/index";
 import { v4 as uuidV4 } from "uuid";
 import { hash } from "bcryptjs";
 

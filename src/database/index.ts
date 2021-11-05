@@ -1,6 +1,6 @@
 import { createConnection, getConnectionOptions } from "typeorm";
 
-(async () => {
+export default async () => {
   const options = await getConnectionOptions();
 
   Object.assign(options, {
@@ -8,5 +8,5 @@ import { createConnection, getConnectionOptions } from "typeorm";
       process.env.NODE_ENV === "test" ? "fin_api_tests" : options.database,
   });
 
-  await createConnection(options);
-})();
+  return createConnection(options);
+};
