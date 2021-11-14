@@ -12,6 +12,7 @@ This challenge include making E2E and Unit Tests for all the business rules.
 - [TypeORM](https://typeorm.io/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [Jest](https://jestjs.io/)
+- [Docker](https://docker.com)
 
 ## 🚀 How to start with Docker
 
