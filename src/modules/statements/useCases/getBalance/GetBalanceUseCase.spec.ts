@@ -1,6 +1,6 @@
 import { InMemoryUsersRepository } from "../../../users/repositories/in-memory/InMemoryUsersRepository";
+import { OperationType } from "../../enums/OperationTypeEnum";
 import { InMemoryStatementsRepository } from "../../repositories/in-memory/InMemoryStatementsRepository";
-import { OperationType } from "../createStatement/CreateStatementUseCase.spec";
 import { GetBalanceError } from "./GetBalanceError";
 import { GetBalanceUseCase } from "./GetBalanceUseCase";
 

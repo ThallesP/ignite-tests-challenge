@@ -1,4 +1,5 @@
 import { InMemoryUsersRepository } from "../../../users/repositories/in-memory/InMemoryUsersRepository";
+import { OperationType } from "../../enums/OperationTypeEnum";
 import { InMemoryStatementsRepository } from "../../repositories/in-memory/InMemoryStatementsRepository";
 import { CreateStatementError } from "./CreateStatementError";
 import { CreateStatementUseCase } from "./CreateStatementUseCase";
@@ -6,11 +7,6 @@ import { CreateStatementUseCase } from "./CreateStatementUseCase";
 let createStatementUseCase: CreateStatementUseCase;
 let inMemoryUsersRepository: InMemoryUsersRepository;
 let inMemoryStatementsRepository: InMemoryStatementsRepository;
-
-export enum OperationType {
-  DEPOSIT = "deposit",
-  WITHDRAW = "withdraw",
-}
 
 describe("Create statement", () => {
   beforeEach(async () => {
